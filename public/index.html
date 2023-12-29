@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-black">
+      <!-- Navbar -->
+      <div class="container flex items-center justify-between px-4 lg:px-0">
+        <!-- Logo -->
+        <div>
+          <img class="w-24 lg:w-36" src="./images/logo.png" alt="" />
+        </div>
+        <!-- Right area -->
+        <div class="hidden md:flex md:items-center md:space-x-2" id="menu">
+          <p class="text-white uppercase text-sm">Sınırsız dizi ve film</p>
+          <a
+            href="#"
+            class="uppercase text-sm text-white rounded-sm bg-red-600 hover:bg-red-500 px-4 py-2"
+            >Şimdi katıl</a
+          >
+          <a
+            href="#"
+            class="uppercase text-sm text-white border border-white rounded-sm hover:bg-zinc-400/20 px-4 py-2"
+            >Oturum aç</a
+          >
+        </div>
+        <!-- Mobile menu btn -->
+        <div class="flex flex-col gap-1 pr-4 md:hidden" id="mobile-btn">
+          <div class="w-6 h-1 bg-white"></div>
+          <div class="w-6 h-1 bg-white"></div>
+          <div class="w-6 h-1 bg-white"></div>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          class="flex flex-col text-center space-y-2 absolute left-0 top-12 p-4 bg-black w-full h-screen md:hidden z-10"
+          id="mobile-menu"
+        >
+          <p class="text-white uppercase text-sm">Sınırsız dizi ve film</p>
+          <a
+            href="#"
+            class="uppercase text-sm text-white rounded-sm bg-red-600 hover:bg-red-500 px-4 py-2"
+            >Şimdi katıl</a
+          >
+          <a
+            href="#"
+            class="uppercase text-sm text-white border border-white rounded-sm hover:bg-zinc-400/20 px-4 py-2"
+            >Oturum aç</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Carousel -->
+    <section class="bg-zinc-950 py-14">
+      <div class="container px-4 lg:px-0">
+        <h1 class="text-3xl md:text-5xl font-bold text-white">
+          Yalnızca Netflix'te
+        </h1>
+        <p
+          class="text-white text-sm md:text-lg font-normal w-full md:w-2/4 py-6"
+        >
+          Başka yerde bulamayacağınız muhteşem ve orijinal içerikler Netflix'te.
+          Filmler, diziler ve çok daha fazlası... Tercihlerinize göre şekillenen
+          bir kullanıcı deneyimi ile hizmetinizde.
+        </p>
+        <!-- Popular -->
+        <div>
+          <h3 class="text-white texte-sm md:text-lg font-medium py-4">
+            Netflix'te Populer
+          </h3>
+          <!-- Carousel -->
+          <div class="owl-carousel">
+            <!-- Item -->
+            <div class="">
+              <img
+                src="./images/kus_ucusu.jpg"
+                alt=""
+                class="w-full lg:max-w-[299px] object-cover"
+              />
+              <p class="text-white text-md py-4 text-center">Kuş Uçuşu</p>
+            </div>
+            <!-- Item -->
+            <div class="">
+              <img
+                src="./images/la_casa_dppl.jpg"
+                alt=""
+                class="w-full lg:max-w-[299px] object-cover"
+              />
+              <p class="text-white text-md py-4 text-center">
+                La casa de papel
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="">
+              <img
+                src="./images/dunyayi_ardinda_birak.jpg"
+                alt=""
+                class="w-full lg:max-w-[299px] object-cover"
+              />
+              <p class="text-white text-md py-4 text-center">
+                Dünyayı ardında bırak
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="">
+              <img
+                src="./images/istanbul_son_cagri.jpg"
+                alt=""
+                class="w-full lg:max-w-[299px] object-cover"
+              />
+              <p class="text-white text-md py-4 text-center">
+                İstanbul için son çağrı
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="">
+              <img
+                src="./images/manifest.jpg"
+                alt=""
+                class="w-full lg:max-w-[299px] object-cover"
+              />
+              <p class="text-white text-md py-4 text-center">Manifest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Mobile menu
+        $("#mobile-menu").hide();
+        $("#mobile-btn").click(function () {
+          $("#mobile-menu").slideToggle(600, "easeInOutQuart");
+        });
+
+        // Owl Carousel
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          margin: 10,
+          responsiveClass: true,
+          autoplaySpeed: 600,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 4,
+              nav: true,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
