@@ -1,4 +1,4 @@
 
-![ss](https://github.com/syurdatapan/netflix/assets/33219097/e5f55ba4-a421-4f44-a23e-a09a76b6cb68)
+![screencapture-127-0-0-1-5500-public-index-html-2023-12-30-11_39_22](https://github.com/syurdatapan/netflix/assets/33219097/c8cd2c4a-d8ed-4664-a72e-5bff0068a928)
 
 
