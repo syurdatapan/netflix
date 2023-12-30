@@ -813,6 +813,27 @@ video {
   transition-duration: 150ms;
 }
 
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -2rem;
+}
+
+.owl-next {
+  right: -2rem;
+}
+
+.owl-prev span,
+.owl-next span {
+  color: red;
+  font-size: 50px;
+}
+
 .hover\:bg-red-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -835,10 +856,6 @@ video {
     width: 50%;
   }
 
-  .md\:max-w-\[299px\] {
-    max-width: 299px;
-  }
-
   .md\:items-center {
     align-items: center;
   }
@@ -847,11 +864,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .md\:text-5xl {
